@@ -1,0 +1,22 @@
+[package]
+name = "dyanmo_export_start_handler"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.lambda.env]
+"TABLE_NAME"="ItsukiEmotionDBStack-EmotionTable722E3AF0-H7Y0YRVGL5SO"
+"SLACK_VERIFICATION_TOKEN"="Ku6vPm6qAwBMskLcmY46QjB1"
+"QUEUE_URL"="https://sqs.us-east-1.amazonaws.com/656062816276/ItsukiEmotionHandlerStack-SlackEventQueuefifoD6767C27-N4JWNWBrVd3B.fifo"
+
+[dependencies]
+anyhow = { workspace = true }
+aws-config = { workspace = true }
+tokio = { workspace = true }
+aws_lambda_events = { workspace = true }
+serde_json = { workspace = true }
+serde = { workspace = true }
+lambda_runtime = { workspace = true }
+
+
+#shared lib
+lib = { path = "../lib" }
