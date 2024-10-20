@@ -4,8 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [package.metadata.lambda.env]
-"SLACK_VERIFICATION_TOKEN"="Ku6vPm6qAwBMskLcmY46QjB1"
-"QUEUE_URL"="https://sqs.us-east-1.amazonaws.com/656062816276/ItsukiEmotionHandlerStack-SlackEventQueuefifoD6767C27-N4JWNWBrVd3B.fifo"
 
 [dependencies]
 anyhow = { workspace = true }
